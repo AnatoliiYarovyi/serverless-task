@@ -22,10 +22,10 @@ const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
     },
     { sumNumber: 0, productNumber: 1 }
   );
-
   const body = {
     getSumAndProductNumber,
   };
+
   return formatJSONResponse({
     message: body,
   });

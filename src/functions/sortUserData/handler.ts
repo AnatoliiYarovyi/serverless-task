@@ -19,7 +19,6 @@ const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
   const sortBirthDate = copyArrForSortBirthDate
     .sort(byField("birthDate"))
     .reverse();
-
   const body = { sortName, sortBirthDate };
 
   return formatJSONResponse({
