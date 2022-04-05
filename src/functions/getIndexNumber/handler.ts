@@ -8,9 +8,9 @@ const handler = async () => {
   const elapsedMilliseconds = dateToday.getTime() - dateStart.getTime();
   const indexNumber = Math.floor(elapsedMilliseconds / 86400000);
   const body = {
-    indexNumber,
+    dayOfTheYear: indexNumber,
   };
-  
+
   return formatJSONResponse({
     message: body,
   });
