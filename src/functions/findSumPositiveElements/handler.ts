@@ -15,7 +15,7 @@ const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
     return acc;
   }, 0);
   const body = {
-    sumPositiveElement,
+    sumAllPositiveElement: sumPositiveElement,
   };
 
   return formatJSONResponse({
